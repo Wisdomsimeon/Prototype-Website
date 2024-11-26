@@ -1,0 +1,123 @@
+﻿
+<html>
+<title>PROTOTYPE</title>
+<style>
+body{
+    margin: 0;
+background:url(prototype.png)no-repeat 50% 50%;
+background-color:black;
+color:white;
+}
+button{
+display:inline-block;
+background:none;
+font-family:Arial;
+margin:0 1 0 1;
+text-align:center;
+color:white;
+height:50px;
+width:70px;
+border:none;
+float:right;
+padding: 0;
+}
+button:hover{
+border:0px solid white;
+cursor:pointer;
+}
+.options{
+background:black;
+width:100%;
+height:0%;
+border-bottom:1px solid red;
+z-index:100;
+position:relative;
+padding-bottom:3%;
+overflow: hidden;
+}
+.opt{
+font-size:23px;
+margin:0px;
+float:left;
+}
+.opt2{
+width:0px;
+height:100%;
+background:linear-gradient(lightgrey,white 70%);
+overflow:hidden;
+transition:0.5s;
+z-index:10000;
+float:left;
+position:absolute;
+position: fixed;
+}
+a{
+text-decoration:none;
+background:black;
+color:white;
+text-align:center;
+cursor:pointer;
+display:block;
+margin:5;
+padding:20 0 20 0;
+font-family:Arial;
+font-size:20px;
+border-radius:10px;
+border:1px solid black;
+}
+a:hover{
+text-decoration:none;
+background:transparent;
+color:black;
+}
+audio{
+display: none;
+}
+.options>img{
+float:left;
+margin:0 0 0 5;
+}
+video{
+max-height:50%;
+max-width:50%;
+}
+</style>
+<script>
+var a;
+function three(){
+if(a==1){
+document.getElementById("opt2").style.width="0px";
+return a=0;
+}
+else{
+document.getElementById("opt2").style.width="347px";
+return a=1;
+}
+}
+
+document.addEventListener('mousemove',function(){
+
+document.getElementById('audio').play();
+
+
+})
+
+</script>
+<body id="body">
+<div class="options">
+<button class="opt" onclick="three()">&#9776</button><img src="activision.png"height="50"width="200"/><button>About Us</button><button>Section</button><button>Home</button></p>
+</div>
+<div class="opt2" id="opt2">
+<img src="pro.png" height="235" width="347"/>
+<a href="" class="one">Games & Fun</a>
+<a href="../wisdom 8GB flash/PROTOTYPE/Gamedata/Movies/NIS_0_1_FMV.bik" class="one">videos</a>
+<a href="../wisdom 8GB flash/New folder/" target="_blank" class="one">pictures</a>
+<a href="‪‪" class="one">Tools</a>
+<a href="" class="one">Instructions</a>
+</div>
+
+<br>
+<audio src="" loop id="audio"></audio>
+
+</body>
+</html>
